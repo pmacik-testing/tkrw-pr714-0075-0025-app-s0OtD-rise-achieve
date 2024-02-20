@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-girt
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0025-tenant/tkrw-pr714-0075-0025-app/devfile-sample-girt@sha256:7bae12da7cc63d737fe02fb52836ed3eb22a069921900f5b05c0ddaa8f7bf815
+        name: my-nodejs
+        resources: {}
+status: {}
